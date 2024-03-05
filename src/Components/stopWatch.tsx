@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
 const Stopwatch = () => {
-  const [timer, setTimer] = useState(0);
-  const [isActive, setIsActive] = useState(false);
+  const [timer, setTimer] = useState<number>(0);
+  const [isActive, setIsActive] = useState<boolean>(false);
 
   useEffect(() => {
-    let interval;
+    let interval:NodeJS.Timeout;
 
     if (isActive) {
       interval = setInterval(() => {

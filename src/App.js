@@ -1,7 +1,7 @@
 
 import './App.css';
 
-import Stopwatch from './Components/stopWatch';
+import Stopwatch from './Components/stopWatch.tsx';
 
 function App() {
   return (
